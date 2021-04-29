@@ -1,5 +1,11 @@
 # Aquarium
 
+## Part 1 - Seting the environment
+
 Aquarium is a small underwater exploration game. The game as well as the experience of building it is and exploration. I am figuring out Unity as well as playing with Virtual reality for the first time. The game is based under the sea surface and you can look around and explore. This is intended to be a small Android game for the [Google Cardboard](https://arvr.google.com/cardboard/) platform. I use the Google VR SDK for Unity for the camera projections and gyroscopic inputs. This is a very early version and the only things I have done up until now is the camera and whole VR SDK setup and the building environment. I also created some crude terain and textured it, along with some post processing which is suppose to look like you are under water. I experimented with Unity's particle system to create bubbles and imported some fish assets to enrich the experience. Below is a short preview of the current version of the current version. The app can be installed by downloading and installing the `.apk` file [here](project_assets/project.apk). To install the app you must allow installs outside of the google play store in your phone settings.
 
 ![](project_assets/preview.gif)
+
+## Part 2 - Movement
+
+In this part I was tasked with implementing the movement in the game. I am going for an underwater sort of floating movement. So I decided the best way is to not restrict the player to moving only on the terrain surrface but also up above (as if swimming underwater). I achieved this by applying a force in the direction of the front vector for the main player camera. The movement was rather simple however getting user input was the challenging part. Since I do not own a game pad, I resorted to a mobile app that emulates a gamepad on another phone and is connected to the phone running the game via bluetooth. I used the [Gamepad VR](https://play.google.com/store/apps/details?id=com.kunkunsoft.gamepadforvr&hl=en_US&gl=US) app for the gamepad emulation. This alloved me to controll the player in the game. A short demo of the movement in action can be seen [here](https://drive.google.com/file/d/1Sc6ewQEjzIUuawLsqnPdKuepgZswlBLV/view).
