@@ -35,7 +35,7 @@ In the current version of the game there is no way for the game to finish (the p
 
 A video of the menus can be seen [here](https://drive.google.com/file/d/1_hkHsyci088lF7Y9l_mxywVT7s5JX8Ob/view?usp=sharing). 
 
-![](project_assets/main_menu.gif)
-![](project_assets/instructions.gif)
-![](project_assets/pause_menu.gif)
-![](project_assets/game_over_menu.gif)
+![](project_assets/main_menu.jpg)
+![](project_assets/instructions.jpg)
+![](project_assets/pause_menu.jpg)
+![](project_assets/game_over_menu.jpg)
