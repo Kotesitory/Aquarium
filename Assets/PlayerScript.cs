@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -8,16 +9,29 @@ public class PlayerScript : MonoBehaviour
     private float gravity = 10.0f;
     private CharacterController controller;
     public Joystick joystick;
+
+    private float startTime;
+    private const float TIME_TO_END = 15; 
+    public GameOverMenu gameOverMenu;
+    
     // Start is called before the first frame update
     void Start()
     {
         this.controller = GetComponent<CharacterController>();
+        GameOverMenu.gameOver = false;
+        Time.timeScale = 1f;
+        startTime = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
+        Debug.Log(GameOverMenu.gameOver);
+        float currentTime = Time.time;
+        if (!GameOverMenu.gameOver && currentTime - startTime > TIME_TO_END) {
+            gameOverMenu.GameOver();
+        }
     }
 
     void PlayerMovement()
