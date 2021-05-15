@@ -29,8 +29,13 @@ This part of the project had an objective to create some simple menu UI elements
  * Menu -> Returns the player to the main menu
  * Quir -> Quits the application
 
- The UI was built on a **Canvas** on the UI layer. The Canvas GameObject is rendered in World space so it can be interacted with by the player. I make sure to transform the Canvas plain to be orthogonal to the forwar vector of the main camera so that the user i always facing the menu when it is first displayed. Each of the Text and Button elements are constructed using elements from the **Text Mesh Pro** package wich is supported by Unity. 
+The UI was built on a **Canvas** on the UI layer. The Canvas GameObject is rendered in World space so it can be interacted with by the player. I make sure to transform the Canvas plain to be orthogonal to the forwar vector of the main camera so that the user i always facing the menu when it is first displayed. Each of the Text and Button elements are constructed using elements from the **Text Mesh Pro** package wich is supported by Unity. 
 
- In the current version of the game there is no way for the game to finish (the player to lose health and die) so I have set up a count-down timer of 15s and when it is elapsed, the Game Over Menu is displayed (signaling that the game is over). 
+In the current version of the game there is no way for the game to finish (the player to lose health and die) so I have set up a count-down timer of 15s and when it is elapsed, the Game Over Menu is displayed (signaling that the game is over). 
 
- A video of the menus can be seen [here](https://drive.google.com/file/d/1_hkHsyci088lF7Y9l_mxywVT7s5JX8Ob/view?usp=sharing). 
+A video of the menus can be seen [here](https://drive.google.com/file/d/1_hkHsyci088lF7Y9l_mxywVT7s5JX8Ob/view?usp=sharing). 
+
+![](project_assets/main_menu.gif)
+![](project_assets/instructions.gif)
+![](project_assets/pause_menu.gif)
+![](project_assets/game_over_menu.gif)
