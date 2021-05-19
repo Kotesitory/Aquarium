@@ -8,7 +8,7 @@ Aquarium is a small underwater exploration game. The game as well as the experie
 
 ## Part 2 - Movement
 
-In this part I was tasked with implementing the movement in the game. I am going for an underwater sort of floating movement. So I decided the best way is to not restrict the player to moving only on the terrain surrface but also up above (as if swimming underwater). I achieved this by applying a force in the direction of the front vector for the main player camera. The movement was rather simple however getting user input was the challenging part. Since I do not own a game pad, I resorted to a mobile app that emulates a gamepad on another phone and is connected to the phone running the game via bluetooth. I used the [Gamepad VR](https://play.google.com/store/apps/details?id=com.kunkunsoft.gamepadforvr&hl=en_US&gl=US) app for the gamepad emulation. This alloved me to controll the player in the game. A short demo of the movement in action can be seen [here](https://drive.google.com/file/d/1Sc6ewQEjzIUuawLsqnPdKuepgZswlBLV/view).
+In this part I was tasked with implementing the movement in the game. I am going for an underwater sort of floating movement. So I decided the best way is to not restrict the player to moving only on the terrain surrface but also up above (as if swimming underwater). I achieved this by applying a force in the direction of the front vector for the main player camera. The movement was rather simple however getting user input was the challenging part. Since I do not own a game pad, I resorted to a mobile app that emulates a gamepad on another phone and is connected to the phone running the game via bluetooth. I used the [Gamepad VR](https://play.google.com/store/apps/details?id=com.kunkunsoft.gamepadforvr&hl=en_US&gl=US) app for the gamepad emulation. This alloved me to controll the player in the game. A short demo of the movement in action can be seen [here](https://drive.google.com/file/d/1Sc6ewQEjzIUuawLsqnPdKuepgZswlBLV/view). The app can be installed by downloading and installing the `.apk` file [here](project_assets/project.apk)
 
 ## Part 3 - UI and Menus
 
@@ -34,6 +34,8 @@ The UI was built on a **Canvas** on the UI layer. The Canvas GameObject is rende
 In the current version of the game there is no way for the game to finish (the player to lose health and die) so I have set up a count-down timer of 15s and when it is elapsed, the Game Over Menu is displayed (signaling that the game is over). 
 
 A video of the menus can be seen [here](https://drive.google.com/file/d/1_hkHsyci088lF7Y9l_mxywVT7s5JX8Ob/view?usp=sharing). 
+
+The app can be installed by downloading and installing the `.apk` file [here](project_assets/project.apk)
 
 ![](project_assets/main_menu.jpg)
 ![](project_assets/instructions.jpg)
@@ -62,6 +64,8 @@ With this I have implemented 3 types of interactions that the player can current
 
 A video of all of this in action can be found [here](https://drive.google.com/file/d/1MFvYEwKKsc76f9Xx3xXjjUJEPeRByu2i/view?usp=sharing) and [here](https://drive.google.com/file/d/1k3bEtu9hO98XrJgvYJzrCCpKG-nTHwTt/view?usp=sharing). Note that these videos vere taken after the sound was implemented so there are soundefects present.
 
+The app can be installed by downloading and installing the `.apk` file [here](project_assets/project.apk)
+
 ![](project_assets/HUD.png)
 
 ## Part 5 - Music and Sound effects
@@ -71,3 +75,5 @@ After adding interactions to the game it feels very empty without sound so that'
 After the audio was set up, I started adding the sounds I downloaded and then placing them in the code where they should be triggered. Currently I have implemented sound effects for colecting loot, being attacked and healing. Also when the player "dies" and the game is over a sound is playd indicating this. As well as this I also added a background track that plays and loops in the whole game (as well as the menus). The track is started when the audio manager is created (which is a slingleton).
 
 A video of all of this in action can be found [here](https://drive.google.com/file/d/1MFvYEwKKsc76f9Xx3xXjjUJEPeRByu2i/view?usp=sharing) and [here](https://drive.google.com/file/d/1k3bEtu9hO98XrJgvYJzrCCpKG-nTHwTt/view?usp=sharing). These are the videos from the previous part since they were recorded after the audio was added.
+
+The app can be installed by downloading and installing the `.apk` file [here](project_assets/project.apk)
